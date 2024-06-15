@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.navbar{
+background-color: teal;
+}
+.header{
+    display: flex;
+    align-items: center;
+    
+}
+
+.myNav{
+    margin-left: 50px;
+    font-size: 18px;
+}
+.logo{
+    font-size: 40px;
+    font-family: 'Montserrat',sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    
+}
+.sectionA{
+    background-color: teal;
+    padding-top: 80px;
+    padding: 15px;
+    margin-top: 50px;
+    
+    
+}
+
+.text p{
+    font-size: 50px;
+    color: goldenrod
+}
+.text h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: goldenrod;
+}
+.text h5{
+    font-size: 30px;
+    color: goldenrod;
+    letter-spacing: 3px;
+}
+.myButton button{
+    height: 50px;
+    width: 25%;
+    border: none;
+    text-align: center;
+    letter-spacing: 0;
+}
+.myButton a{
+    text-decoration: none;
+    color: teal;
+}
+
