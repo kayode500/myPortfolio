@@ -24,6 +24,7 @@ background-color: teal;
     padding-top: 80px;
     padding: 15px;
     margin-top: 50px;
+    height: 500px;
     
     
 }
@@ -42,15 +43,86 @@ background-color: teal;
     color: goldenrod;
     letter-spacing: 3px;
 }
-.myButton button{
+.myButton{
     height: 50px;
     width: 25%;
     border: none;
     text-align: center;
     letter-spacing: 0;
+    
+    
 }
 .myButton a{
     text-decoration: none;
     color: teal;
+    
 }
+.myButton:hover{
+    background-color: teal;
+    border: 2px solid white;
+    color: white;
+}
+.myButton a:hover{
+    color: white;
+    
+}
+ .bottom{
+    border-bottom: 5px solid teal;
+    width: 50%;
+    color: #414141;
+    
+}
+.sectionB{
+    padding: 30px;
+
+}
+.sectionB2{
+    margin-top: 50px;
+}
+.sectionB2 h1 {
+    color: #414141;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'montserrat',sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+.skill{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;   
+}
+.skill .text{
+    display: flex;    
+    font-size: 16px;
+    font-weight: 400;
+    color: #414141;
+    justify-content: space-between;
+}
+
+.progress-bar{
+    border-bottom: 10px;
+    border-radius: 50px;
+    width:100%;
+    background-color:lightgray
+}
+.progress{
+    background-color:teal;
+    width: 85%;
+    margin: 10px;
+}
+.learnMoreButton{
+    width: 100px;
+    height: 50px;
+    color: white;
+    margin-top: 20px;
+    background-color: teal;
+    border: none;
+}
+.learnMoreButton:hover{
+    background-color: white;
+    color: teal;
+    border: 2px solid teal;
+}
+
 
