@@ -19,28 +19,31 @@ background-color: teal;
     font-weight: 700;
     
 }
+.logo:hover{
+    color: gold;
+}
 .sectionA{
     background-color: teal;
     padding-top: 80px;
     padding: 15px;
     margin-top: 50px;
-    height: 500px;
+    height: 700px;
     
     
 }
 
 .text p{
     font-size: 50px;
-    color: goldenrod
+    color: white;
 }
 .text h1{
     font-size: 60px;
     font-weight: bold;
-    color: goldenrod;
+    color: white;
 }
 .text h5{
     font-size: 30px;
-    color: goldenrod;
+    color:white;
     letter-spacing: 3px;
 }
 .myButton{
@@ -87,6 +90,10 @@ background-color: teal;
     margin-bottom: 20px;
     letter-spacing: 5px;
 }
+.sectionB2 p{
+    font-size: 16px;
+    font-weight: 600;
+}
 .skill{
     display: flex;
     flex-direction: row; 
@@ -124,5 +131,57 @@ background-color: teal;
     color: teal;
     border: 2px solid teal;
 }
+.sectionC{
+    text-align: center;
+    margin-top: 40px;
+}
+.sectionC .text1{
+    font-size: 16px;
+    letter-spacing:1px;
+    font-weight: 600;
+    color: #414141;
+    margin-bottom: 10px;
+    border-bottom: 2px solid teal;
+    
+}
+.sectionC h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: 'Montserrat' sans-serif;
+    margin-bottom: 20px;
+}
 
+.icons{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+   
+}
+.service{
+    font-size: 70px!important;
+    color: teal;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.laptopColumn{
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    height: 200px;
+    
+}
+.laptopColumn p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #414141;
+    text-align: center;
+    margin-top: 5px;
 
+}
+
+.iconRow{
+    margin: auto;
+    
+}
