@@ -9,9 +9,15 @@ background-color: teal;
 }
 
 .myNav{
-    margin-left: 50px;
-    font-size: 18px;
+    margin: 10px;
+    font-size: 22px;
+    margin-left: 100px;
+
 }
+.collapsenav{
+    
+}
+
 .logo{
     font-size: 40px;
     font-family: 'Montserrat',sans-serif;
