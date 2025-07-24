@@ -1,23 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* General body and font */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section spacing */
+.sectionA, .sectionB, .sectionC, .icons, .myResume, .Experience, .price, .connectMe {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Responsive images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons */
+.myButton, .learnMoreButton, .pricingButton {
+  min-width: 120px;
+  font-size: 1rem;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  margin: 0.25rem;
+  transition: background 0.2s;
+}
+.myButton a, .learnMoreButton, .pricingButton {
+  color: #fff;
+  text-decoration: none;
+}
+.myButton:hover, .learnMoreButton:hover, .pricingButton:hover {
+  background: #0056b3;
+}
+
+/* Progress bars */
+.progress-bar {
+  background-color: #198754;
+}
+
+/* Skills section */
+.skill {
+  font-size: 1rem;
+}
+
+/* Services icons */
+.service {
+  color: #198754;
+  margin-bottom: 0.5rem;
+}
+
+/* Social icons */
+.socialIcons a {
+  color: #198754;
+  transition: color 0.2s;
+}
+.socialIcons a:hover {
+  color: #0056b3;
+}
+
+/* Headings */
+h1, h3, h4, h5 {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+/* Existing styles */
 .navbar{
 background-color: teal;
 }
 .header{
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
-
 .myNav{
     margin: 10px;
     font-size: 22px;
     margin-left: 100px;
-
+    gap: 1.2rem;
 }
-.collapsenav{
-    
+.myNav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
 }
 
+.myNav .nav-link:hover,
+.myNav .nav-link.active {
+  color: #ffd700 !important;
+}
 .logo{
     font-size: 40px;
     font-family: 'Montserrat',sans-serif;
@@ -32,10 +107,8 @@ background-color: teal;
     background-color: teal;
     padding-top: 80px;
     padding: 15px;
-    margin-top: 50px;
+    margin-top: 70px;
     height: 700px;
-    
-    
 }
 
 .text p{
@@ -57,14 +130,11 @@ background-color: teal;
     width: 25%;
     border: none;
     text-align: center;
-    letter-spacing: 0;
-    
-    
+    letter-spacing: 0;  
 }
 .myButton a{
     text-decoration: none;
-    color: teal;
-    
+    color: teal;   
 }
 .myButton:hover{
     background-color: teal;
@@ -78,12 +148,10 @@ background-color: teal;
  .bottom{
     border-bottom: 5px solid teal;
     width: 50%;
-    color: #414141;
-    
+    color: #414141;   
 }
 .sectionB{
     padding: 30px;
-
 }
 .sectionB2{
     margin-top: 50px;
@@ -113,8 +181,7 @@ background-color: teal;
     justify-content: space-between;
 }
 
-.progress-bar{
-    border-bottom: 10px;
+.progress-bar{ 
     border-radius: 50px;
     width:100%;
     background-color:lightgray
@@ -125,12 +192,14 @@ background-color: teal;
     margin: 10px;
 }
 .learnMoreButton{
-    width: 100px;
-    height: 50px;
-    color: white;
-    margin-top: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-align: center;
+    width: auto;
+    min-width: 120px;
+    border-radius: 25px;
     background-color: teal;
-    border: none;
 }
 .learnMoreButton:hover{
     background-color: white;
@@ -154,16 +223,27 @@ background-color: teal;
     font-size: 40px;
     letter-spacing: 1px;
     font-weight: 700;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat',sans-serif;
     margin-bottom: 20px;
+    color: #414141;
 }
 
 .icons{
     text-align: center;
     margin-top: 50px;
-    display: flex;
-   
+    display: block; /* Ensure it's not flex */
+    width: 100%;
 }
+
+.icons .row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  overflow-x: auto;
+}
+
 .service{
     font-size: 70px!important;
     color: teal;
@@ -184,10 +264,233 @@ background-color: teal;
     color: #414141;
     text-align: center;
     margin-top: 5px;
-
+}
+.iconRow{
+    margin: auto;  
+}
+.myResume{
+    text-align: center;
+    color: #414141;
+    margin-top: 20px;
+    font-family: 'Montserrat',sans-serif;
+   
+}
+.myResume h4{
+    font-size: 16px;
+    font-weight:700;
+    margin-bottom: 20px;
+}
+.myResume h1{
+    font-size: 40px;
+    font-weight: 700; 
+    margin-bottom: 20px;
+}
+.Experience{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.Experiencediv{
+    background-color: rgb(227, 227, 227);
+    border-right: 5px solid gray;
+    
+}
+.developer{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 5px;
+    margin-top: 5px;
+}
+.soft{
+    font-style: oblique;
+    font-size: 14px;
+    font-weight: 400;
+}
+.price{
+    background-color: teal;
+    text-align:center;
+    margin-top: 10px;
+    height: 400px;
+   
+}
+.priceText{
+    margin: 10px;
+}
+.reasonableText{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    margin-top: 70px;
+}
+.specialText{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 42px;
+    color: white;
+    font-weight: 700;
+}
+.priceLorem{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    
+}
+.pricingButton{
+    border: none;
+    height: 40px;
+    width: 120px;
+    background-color: white;
+    color: teal;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 20px;
+}
+.connectMe{
+    text-align: center;
+    
+}
+.connect{
+    color: #414141;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 20px;
+}
+.socials{
+    color: teal;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 5px;
 }
 
-.iconRow{
-    margin: auto;
-    
+/* Responsive text */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h3, h4 {
+    font-size: 1.2rem;
+  }
+  .sectionA .text, .sectionB2 {
+    text-align: center;
+  }
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+  .icons .row > div {
+    margin-bottom: 1.5rem;
+  }
+  .icons .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .icons .row > div {
+    min-width: 200px;
+    max-width: 400px;
+    width: 100%;
+  }
+  .bottom {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+  .sectionA, .sectionB, .sectionC, .icons, .myResume, .Experience, .price, .connectMe {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .myButton, .learnMoreButton, .pricingButton {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+  .socialIcons a {
+    font-size: 1.5rem;
+  }
+}
+
+.icons .row {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  overflow-x: auto; /* Allow horizontal scroll on small screens */
+}
+
+.icons .row > div {
+  flex: 1 1 0;
+  min-width: 180px;
+  max-width: 300px;
+  background: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.icons .row > div:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.icons .service {
+  margin-bottom: 1rem;
+  color: #198754;
+}
+
+.icons h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.icons p {
+  font-size: 0.95rem;
+  color: #444;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .icons .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;      /* <-- Add this line to override nowrap */
+    overflow-x: visible;  /* <-- Remove horizontal scroll on mobile */
+  }
+  .icons .row > div {
+    min-width: 200px;
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .myNav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .navbar-collapse {
+    background: teal;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
 }

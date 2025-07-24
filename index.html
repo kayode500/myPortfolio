@@ -11,43 +11,35 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-    <div class="container-fluid header">
-      <div class="row">
-        <div class="col-md-6">
-          <a class="navbar-brand logo" href="#">DEVFOLIO</a>
-
-        </div>
-        <div class="col-md-6">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-
-          </button>
-          <div class="collapse navbar-collapse collapsenav" id="collapsibleNavbar">
-            <ul class="navbar-nav myNav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Review</a>
-              </li>    
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>   
-              <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>                
-            </ul>
-          </div>
-        </div>
+    <div class="container-fluid header d-flex justify-content-between align-items-center">
+      <a class="navbar-brand logo" href="#">DEVFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse collapsenav" id="collapsibleNavbar">
+        <ul class="navbar-nav myNav ms-auto d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#">Review</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>                
+        </ul>
       </div>
     </div>
   </nav>
@@ -71,133 +63,150 @@
     </div>
 
   </div>
-  <div class="container-fluid sectionB">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="/Images/image2.png" alt="image2" class="img-fluid" width="100%" height="800">
-
+  <div class="container-fluid sectionB py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <img src="/Images/image2.png" alt="image2" class="img-fluid w-100 h-auto">
       </div>
-      <div class="col-md-6 sectionB2">
+      <div class="col-lg-6 col-md-12 sectionB2">
         <h3 class="bottom">LEARN ABOUT ME</h3>
-        <h1>10 Years Experience</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet expedita architecto voluptates quis accusantium magnam, ipsum, libero deserunt ipsam neque temporibus alias nisi accusamus dignissimos, sit nostrum doloribus distinctio dolorum.</p>
+        <h1>4 Years Experience</h1>
+        <p>
+          I am a passionate software developer with 4 years of experience building web and mobile applications. I specialize in creating efficient, scalable, and user-friendly solutions using modern technologies. My goal is to deliver high-quality products that solve real-world problems and exceed client expectations.
+        </p>
         <div>
-          <div class="skill">
-            <p class="text">HTML</p>
-            <p class="text">85%</p>
+          <!-- Skills -->
+          <div class="skill d-flex justify-content-between">
+            <p class="text mb-0">HTML</p>
+            <p class="text mb-0">85%</p>
           </div>
-        
-          <div class="progress-bar">
-            <div class="progress">
-            </div>
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar" style="width:85%"></div>
           </div>
-  
-          <div class="skill">
-            <p class="text">CSS</p>
-            <p class="text">95%</p>
+          <div class="skill d-flex justify-content-between">
+            <p class="text mb-0">CSS</p>
+            <p class="text mb-0">70%</p>
           </div>
-  
-          <div class="progress-bar">
-            <div class="progress ">
-            </div>
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar" style="width:95%"></div>
           </div>
-          <div class="skill">
-            <p class="text">JAVASCRIPT</p>
-            <p class="text">85%</p>
-  
+          <div class="skill d-flex justify-content-between">
+            <p class="text mb-0">JavaScript</p>
+            <p class="text mb-0">70%</p>
           </div>
-          <div class="progress-bar">
-            <div class="progress">
-            </div>
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar" style="width:70%"></div>
           </div>
-          <div class="skill">
-            <p class="text">JAVA</p>
-            <p class="text">85%</p>
-
+          <div class="skill d-flex justify-content-between">
+            <p class="text mb-0">Flutter</p>
+            <p class="text mb-0">70%</p>
           </div>
-          <div class="progress-bar">
-            <div class="progress">
-            </div>
-
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar" style="width:70%"></div>
           </div>
-          <div class="skill">
-            <p class="text">SQL</p>
-            <p class="text">85%</p>
-
+          <div class="skill d-flex justify-content-between">
+            <p class="text mb-0">Dart</p>
+            <p class="text mb-0">70%</p>
           </div>
-          <div class="progress-bar">
-            <div class="progress">
-            </div>
-
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar" style="width:70%"></div>
           </div>
-          <div class="skill">
-            <p class="text">UI/UX</p>
-            <p class="text">85%</p>
-
+          <div class="skill d-flex justify-content-between">
+            <p class="text mb-0">Java</p>
+            <p class="text mb-0">60%</p>
           </div>
-          <div class="progress-bar">
-            <div class="progress">
-            </div>
-
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar" style="width:70%"></div>
+          </div>
+          <div class="skill d-flex justify-content-between">
+            <p class="text mb-0">SQL</p>
+            <p class="text mb-0">70%</p>
+          </div>
+          <div class="progress mb-3" style="height: 8px;">
+            <div class="progress-bar" style="width:70%"></div>
           </div>
           <div>
-            <button class="learnMoreButton">Learn More</button>
+            <button class="learnMoreButton btn btn-primary mt-3">Learn More</button>
           </div>
         </div>
-    </div>
-  </div>
-</div>
-  <div class="container align-items-center sectionC">
-    <div class="row">
-      <div class="col-md-12">
-        <h4 class="text1">WHAT I DO</h4>
-        <h1>Awesome Quality Services</h1>
-
       </div>
     </div>
   </div>
-  <div class="container icons align-items-center">
-    <div class="row iconRow">
-      <div class="col laptopColumn">
-        <i class="fa fa-laptop service"></i>
-        <h4>Web Design</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis</p>
 
+  <div class="container sectionC text-center py-5">
+    <h4 class="text1">WHAT I DO</h4>
+    <h1>Awesome Quality Services</h1>
+  </div>
+
+  <div class="container icons py-4">
+    <div class="row text-center">
+      <div class="col-md-3 col-6 mb-4">
+        <i class="fa fa-laptop service fa-2x mb-2"></i>
+        <h4>Mobile App</h4>
+        <p>I design and build modern, user-friendly mobile applications for Android and iOS platforms.</p>
       </div>
-
-      <div class="col laptopColumn">
-        <i class="fa fa-television service"></i>
+      <div class="col-md-3 col-6 mb-4">
+        <i class="fa fa-television service fa-2x mb-2"></i>
         <h4>Web Development</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis</p>
-
+        <p>I create responsive and interactive websites using the latest web technologies and frameworks.</p>
       </div>
-      
-      <div class="col laptopColumn">
-        <i class="fa fa-android service"></i>
+      <div class="col-md-3 col-6 mb-4">
+        <i class="fa fa-android service fa-2x mb-2"></i>
         <h4>App Development</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis</p>
-
+        <p>Experienced in developing cross-platform applications with seamless performance and great UI.</p>
       </div>
-      <div class="col  laptopColumn">
-        <i class=" fa fa-paint-brush service"></i>
-        <h4>UI/UX Design</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis</p>
+      <div class="col-md-3 col-6 mb-4">
+        <i class="fa fa-paint-brush service fa-2x mb-2"></i>
+        <h4>SQL</h4>
+        <p>Skilled in designing, managing, and optimizing SQL databases for robust data-driven solutions.</p>
       </div>
     </div>
-
   </div>
 
-  <div class="container">
+  <div class="container myResume py-5 text-center">
+    <h4>MY RESUME</h4>
+    <h1>WORKING EXPERIENCE</h1>
+    <p>
+      Over the years, I have worked with various teams and organizations, contributing to multiple successful projects. My experience ranges from frontend and backend development to database management and cross-platform app development.
+    </p>
+  </div>
+  <div class="container Experience py-4">
     <div class="row">
-      <div class="col-md-12">
-        <h4>MY RESUME</h4>
-        <h1></h1>
-
+      <div class="col-md-6 mb-3">
+        <h3 class="developer">Mobile App Developer</h3>
+        <p class="soft">Soft agency, San Francisco, CA</p>
+        <p>
+          Designed and developed cross-platform mobile applications using Flutter and Dart, delivering seamless user experiences for both Android and iOS. Collaborated with UI/UX designers and backend teams to implement features, optimize performance, and ensure timely project delivery.
+        </p>
       </div>
-
+      <div class="col-md-6 mb-3">
+        <h3 class="developer">Web Developer</h3>
+        <p class="soft">Soft agency, San Francisco, CA</p>
+        <p>
+          Built responsive and interactive websites using HTML, CSS, JavaScript, and modern frameworks. Worked closely with clients to gather requirements, troubleshoot issues, and deploy robust web solutions that met business goals and enhanced user engagement.
+        </p>
+      </div>
     </div>
-
   </div>
 
+  <div class="container price py-5 text-center">
+    <h3 class="reasonableText">REASONABLE PRICE</h3>
+    <h1 class="specialText">Get A Special Price</h1>
+    <p class="priceLorem">Lorem ipsum dolor sit amet...</p>
+    <button class="pricingButton btn btn-success mt-3">Hire me</button>
+  </div>
+
+  <div class="container connectMe py-5 text-center">
+    <h1 class="connect">Contact me</h1>
+    <h3 class="socials">For your tech jobs, please click on the link to connect me via social media</h3>
+    <div class="socialIcons mt-3">
+      <a href="#" target="_blank" class="mx-2"><i class="fa fa-facebook fa-2x"></i></a>
+      <a href="#" target="_blank" class="mx-2"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="#" target="_blank" class="mx-2"><i class="fa fa-linkedin fa-2x"></i></a>
+      <a href="#" target="_blank" class="mx-2"><i class="fa fa-instagram fa-2x"></i></a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
